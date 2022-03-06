@@ -6,11 +6,14 @@ using System.Threading.Tasks;
 
 namespace Library_System_Management
 {
-    internal class Member
+    internal class Teacher : Member
     {
-        string name;
-        string SSID;
-
-     
+        public Teacher()
+        {
+            string name;
+            string SSID;
+            string major;
+        }
+        
     }
 }
