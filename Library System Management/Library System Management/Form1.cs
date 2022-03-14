@@ -6,5 +6,14 @@ namespace Library_System_Management
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if ((textBoxUsername.Text =="naphapilan")&&(textBoxPassword.Text=="123456"))
+            {
+                MessageBox.Show("ยินดีต้อนรับเข้าสู่ระบบ");
+            }
+        }
+
     }
 }
