@@ -30,6 +30,7 @@ namespace Library_System_Management
                 dataGridViewMember.Rows[n].Cells[3].Value = rdTeacher.Text;
 
             dataGridViewMember.Rows[n].Cells[4].Value = dateTimePicker1.Text;
+            dataGridViewMember.Rows[n].Cells[5].Value = "";
         }
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
@@ -82,7 +83,8 @@ namespace Library_System_Management
                 dataGridViewMember.Rows[n].Cells[3].Value = rdStudent.Text;
             else if (rdTeacher.Checked)
                 dataGridViewMember.Rows[n].Cells[3].Value = rdTeacher.Text;
-            
+
+            dataGridViewMember.Rows[n].Cells[4].Value = "";
             dataGridViewMember.Rows[n].Cells[5].Value = dateTimePicker1.Text;
         }
     }
