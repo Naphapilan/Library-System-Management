@@ -7,13 +7,31 @@ namespace Library_System_Management
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonLogin_Click(object sender, EventArgs e)
         {
-            if ((textBoxUsername.Text =="naphapilan")&&(textBoxPassword.Text=="123456"))
+            if (textBoxUsername.Text !="naphapilan")  
             {
-                MessageBox.Show("ยินดีต้อนรับเข้าสู่ระบบ");
+                MessageBox.Show("Usename ไม่ถูกต้อง");
             }
+            if (textBoxPassword.Text != "123456")
+            {
+                MessageBox.Show("Password ไม่ถูกต้อง");
+            }
+            
+            Form4 form4 = new Form4();
+            form4.Show();
         }
 
+        private void buttonStudentRegis_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+            form2.Show();
+        }
+
+        private void buttonStaftRegis_Click(object sender, EventArgs e)
+        {
+            Form3 form3 = new Form3();
+            form3.Show();
+        }
     }
 }

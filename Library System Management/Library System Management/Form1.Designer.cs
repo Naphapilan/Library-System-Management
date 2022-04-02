@@ -36,9 +36,12 @@
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonLogin = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonStudentRegis = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.buttonStaftRegis = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -51,7 +54,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(9, 3, 0, 3);
-            this.menuStrip1.Size = new System.Drawing.Size(452, 35);
+            this.menuStrip1.Size = new System.Drawing.Size(464, 35);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -86,9 +89,10 @@
             // 
             // textBoxPassword
             // 
-            this.textBoxPassword.Location = new System.Drawing.Point(119, 102);
+            this.textBoxPassword.Location = new System.Drawing.Point(119, 96);
             this.textBoxPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.PasswordChar = '*';
             this.textBoxPassword.Size = new System.Drawing.Size(210, 31);
             this.textBoxPassword.TabIndex = 2;
             // 
@@ -112,49 +116,83 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Password";
             // 
-            // button1
+            // buttonLogin
             // 
-            this.button1.Location = new System.Drawing.Point(72, 162);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(107, 38);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Login";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonLogin.Location = new System.Drawing.Point(170, 146);
+            this.buttonLogin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonLogin.Name = "buttonLogin";
+            this.buttonLogin.Size = new System.Drawing.Size(107, 38);
+            this.buttonLogin.TabIndex = 5;
+            this.buttonLogin.Text = "Login";
+            this.buttonLogin.UseVisualStyleBackColor = true;
+            this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button2);
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.buttonLogin);
             this.groupBox1.Controls.Add(this.textBoxUsername);
             this.groupBox1.Controls.Add(this.textBoxPassword);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(33, 82);
+            this.groupBox1.Location = new System.Drawing.Point(42, 51);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox1.Size = new System.Drawing.Size(366, 210);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Login";
+            this.groupBox1.Text = "Login For Staft";
             // 
-            // button2
+            // buttonStudentRegis
             // 
-            this.button2.Location = new System.Drawing.Point(202, 164);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(112, 34);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Register";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.buttonStudentRegis.Location = new System.Drawing.Point(313, 273);
+            this.buttonStudentRegis.Name = "buttonStudentRegis";
+            this.buttonStudentRegis.Size = new System.Drawing.Size(112, 34);
+            this.buttonStudentRegis.TabIndex = 6;
+            this.buttonStudentRegis.Text = "Click";
+            this.buttonStudentRegis.UseVisualStyleBackColor = true;
+            this.buttonStudentRegis.Click += new System.EventHandler(this.buttonStudentRegis_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(22, 282);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(265, 25);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "ลงทะเบียนสำหรับนักศึกษาและอาจารย์";
+            // 
+            // buttonStaftRegis
+            // 
+            this.buttonStaftRegis.Location = new System.Drawing.Point(313, 317);
+            this.buttonStaftRegis.Name = "buttonStaftRegis";
+            this.buttonStaftRegis.Size = new System.Drawing.Size(112, 34);
+            this.buttonStaftRegis.TabIndex = 9;
+            this.buttonStaftRegis.Text = "Click";
+            this.buttonStaftRegis.UseVisualStyleBackColor = true;
+            this.buttonStaftRegis.Click += new System.EventHandler(this.buttonStaftRegis_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(22, 322);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(191, 25);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "ลงทะเบียนสำหรับเจ้าหน้าที่";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(452, 313);
+            this.ClientSize = new System.Drawing.Size(464, 419);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.buttonStaftRegis);
+            this.Controls.Add(this.buttonStudentRegis);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -180,8 +218,11 @@
         private TextBox textBoxPassword;
         private Label label1;
         private Label label2;
-        private Button button1;
+        private Button buttonLogin;
         private GroupBox groupBox1;
-        private Button button2;
+        private Button buttonStudentRegis;
+        private Label label3;
+        private Button buttonStaftRegis;
+        private Label label5;
     }
 }
