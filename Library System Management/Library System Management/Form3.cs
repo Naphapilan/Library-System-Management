@@ -17,15 +17,31 @@ namespace Library_System_Management
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void btCancel_Click(object sender, EventArgs e)
         {
             Form1 form1 = new Form1();
             form1.Show();
+            this.Hide();
+        }
+
+        private void btRegister_Click(object sender, EventArgs e)
+        {
+            int n = dataGridView1.Rows.Add();
+            dataGridView1.Rows[n].Cells[0].Value = tbName.Text;
+            dataGridView1.Rows[n].Cells[1].Value = tbID.Text;
+
+            if(rdStudent.Checked)
+                dataGridView1.Rows[n].Cells[2].Value = rdStudent.Text;
+                dataGridView1.Rows[n].Cells[3].Value = " ";
+                dataGridView1.Rows[n].Cells[4].Value = " ";
+            if(rdTeacher.Checked)
+                dataGridView1.Rows[n].Cells[2].Value = rdTeacher.Text;
+                dataGridView1.Rows[n].Cells[3].Value = " ";
+                dataGridView1.Rows[n].Cells[4].Value = " ";
+            if (rdStaft.Checked)
+                dataGridView1.Rows[n].Cells[2].Value = rdStaft.Text;
+                dataGridView1.Rows[n].Cells[3].Value = tbUsename.Text;
+                dataGridView1.Rows[n].Cells[4].Value = tbPassword.Text;
         }
     }
 }
