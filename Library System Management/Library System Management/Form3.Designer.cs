@@ -49,9 +49,13 @@
             this.rdTeacher = new System.Windows.Forms.RadioButton();
             this.rdStudent = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tbID
@@ -267,6 +271,33 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "For Staft";
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1307, 50);
+            this.menuStrip1.TabIndex = 19;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.saveToolStripMenuItem});
+            this.fileToolStripMenuItem.Font = new System.Drawing.Font("TH Kodchasal", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(69, 46);
+            this.fileToolStripMenuItem.Text = "File";
+            // 
+            // saveToolStripMenuItem
+            // 
+            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(270, 50);
+            this.saveToolStripMenuItem.Text = "Save";
+            this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 42F);
@@ -281,7 +312,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tbName);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("TH Kodchasal", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form3";
             this.Text = "ลงทะเบียน";
@@ -290,6 +323,8 @@
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -317,5 +352,8 @@
         private RadioButton rdTeacher;
         private RadioButton rdStudent;
         private GroupBox groupBox1;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem fileToolStripMenuItem;
+        private ToolStripMenuItem saveToolStripMenuItem;
     }
 }

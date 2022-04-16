@@ -78,11 +78,11 @@
             // 
             // buttonLogin
             // 
-            this.buttonLogin.Location = new System.Drawing.Point(204, 245);
+            this.buttonLogin.Location = new System.Drawing.Point(187, 248);
             this.buttonLogin.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(128, 64);
-            this.buttonLogin.TabIndex = 5;
+            this.buttonLogin.TabIndex = 3;
             this.buttonLogin.Text = "Login";
             this.buttonLogin.UseVisualStyleBackColor = true;
             this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
@@ -94,7 +94,7 @@
             this.groupBox1.Controls.Add(this.textBoxUsername);
             this.groupBox1.Controls.Add(this.textBoxPassword);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(50, 86);
+            this.groupBox1.Location = new System.Drawing.Point(48, 30);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(5, 8, 5, 8);
@@ -105,11 +105,11 @@
             // 
             // buttonStaftRegis
             // 
-            this.buttonStaftRegis.Location = new System.Drawing.Point(237, 427);
+            this.buttonStaftRegis.Location = new System.Drawing.Point(229, 379);
             this.buttonStaftRegis.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonStaftRegis.Name = "buttonStaftRegis";
             this.buttonStaftRegis.Size = new System.Drawing.Size(134, 57);
-            this.buttonStaftRegis.TabIndex = 3;
+            this.buttonStaftRegis.TabIndex = 4;
             this.buttonStaftRegis.Text = "Click";
             this.buttonStaftRegis.UseVisualStyleBackColor = true;
             this.buttonStaftRegis.Click += new System.EventHandler(this.buttonStaftRegis_Click);
@@ -117,7 +117,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(85, 433);
+            this.label5.Location = new System.Drawing.Point(80, 379);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(128, 42);
@@ -128,7 +128,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 42F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(533, 502);
+            this.ClientSize = new System.Drawing.Size(523, 465);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.buttonStaftRegis);
             this.Controls.Add(this.groupBox1);

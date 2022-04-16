@@ -41,14 +41,14 @@
             this.rdTeacher = new System.Windows.Forms.RadioButton();
             this.rdStudent = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.tbMajor = new System.Windows.Forms.TextBox();
             this.tbID = new System.Windows.Forms.TextBox();
             this.tbName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.btCheckOut = new System.Windows.Forms.Button();
             this.btCheakIn = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -73,7 +73,7 @@
             this.Column3,
             this.Column4,
             this.Column5});
-            this.dataGridViewMember.Location = new System.Drawing.Point(378, 86);
+            this.dataGridViewMember.Location = new System.Drawing.Point(364, 117);
             this.dataGridViewMember.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.dataGridViewMember.Name = "dataGridViewMember";
             this.dataGridViewMember.RowHeadersWidth = 62;
@@ -176,8 +176,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.tbMajor);
             this.groupBox1.Controls.Add(this.tbID);
@@ -185,32 +183,14 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(22, 66);
+            this.groupBox1.Location = new System.Drawing.Point(8, 97);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.groupBox1.Size = new System.Drawing.Size(336, 522);
+            this.groupBox1.Size = new System.Drawing.Size(336, 438);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Profile";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(29, 472);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 42);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Date";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(30, 430);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 42);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Time";
             // 
             // tbMajor
             // 
@@ -263,9 +243,27 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Name";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(1226, 70);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(64, 42);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Date";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(1094, 70);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(65, 42);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Time";
+            // 
             // btCheckOut
             // 
-            this.btCheckOut.Location = new System.Drawing.Point(574, 531);
+            this.btCheckOut.Location = new System.Drawing.Point(560, 562);
             this.btCheckOut.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.btCheckOut.Name = "btCheckOut";
             this.btCheckOut.Size = new System.Drawing.Size(135, 57);
@@ -276,7 +274,7 @@
             // 
             // btCheakIn
             // 
-            this.btCheakIn.Location = new System.Drawing.Point(408, 531);
+            this.btCheakIn.Location = new System.Drawing.Point(394, 562);
             this.btCheakIn.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.btCheakIn.Name = "btCheakIn";
             this.btCheakIn.Size = new System.Drawing.Size(135, 57);
@@ -328,7 +326,7 @@
             // 
             // btCancel
             // 
-            this.btCancel.Location = new System.Drawing.Point(746, 531);
+            this.btCancel.Location = new System.Drawing.Point(732, 562);
             this.btCancel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btCancel.Name = "btCancel";
             this.btCancel.Size = new System.Drawing.Size(134, 57);
@@ -342,7 +340,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 42F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1491, 640);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.btCancel);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.dataGridViewMember);
             this.Controls.Add(this.btCheckOut);
             this.Controls.Add(this.groupBox1);
@@ -351,7 +351,7 @@
             this.Font = new System.Drawing.Font("TH Kodchasal", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "Form4";
-            this.Text = "Form4";
+            this.Text = "Library System Management";
             this.Load += new System.EventHandler(this.Form4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMember)).EndInit();
             this.groupBox2.ResumeLayout(false);
